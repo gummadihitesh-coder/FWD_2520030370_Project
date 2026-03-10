@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PresenceIQ - Intelligent Attendance Analytics</title>
+
+<style>
+/* CSS Styling */
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#34495e;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+button{
+    padding:10px 20px;
+    background:#2980b9;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1c5980;
+}
+
+#moreText{
+    display:none;
+    margin-top:10px;
+}
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>PresenceIQ</h1>
+<p>Intelligent Attendance Analytics System</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Features</a>
+<a href="#">Analytics</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>About PresenceIQ</h2>
+
+<p>
+PresenceIQ – Intelligent Attendance Analytics is a web-based application developed to modernize the traditional attendance system by automating attendance recording and management. The system efficiently captures, stores, and organizes attendance data, reducing manual work and human errors.
+</p>
+
+<p>
+It provides a secure and user-friendly interface that allows institutions to manage attendance records accurately while saving time and resources.
+</p>
+
+<button onclick="showMore()">Read More</button>
+
+<p id="moreText">
+The application also focuses on intelligent analytics by generating meaningful insights from attendance data. PresenceIQ analyzes attendance patterns, identifies trends, and produces detailed reports through visual dashboards. These analytics help administrators and educators make informed, data-driven decisions to improve monitoring, accountability, and overall performance.
+</p>
+
+</div>
+
+<div class="card">
+<h2>Key Features</h2>
+<ul>
+<li>Automated Attendance Recording</li>
+<li>Secure Data Management</li>
+<li>User-Friendly Interface</li>
+<li>Attendance Pattern Analysis</li>
+<li>Visual Reports and Dashboards</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Benefits</h2>
+<ul>
+<li>Reduces manual work</li>
+<li>Improves accuracy of attendance data</li>
+<li>Saves time for teachers and administrators</li>
+<li>Provides insights using analytics</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 PresenceIQ Attendance System</p>
+</footer>
+
+<script>
+
+/* JavaScript */
+
+function showMore(){
+    var text = document.getElementById("moreText");
+
+    if(text.style.display === "none"){
+        text.style.display = "block";
+    }
+    else{
+        text.style.display = "none";
+    }
+}
+
+</script>
+
+</body>
+</html>
